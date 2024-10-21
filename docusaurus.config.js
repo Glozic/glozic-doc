@@ -13,7 +13,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://glozic.github.io',
+  url: 'https://kokkoon.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -21,7 +21,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Glozic', // Usually your GitHub org/user name.
-  projectName: 'glozic.github.io', // Usually your repo name.
+  projectName: 'kokkoon.github.io', // Usually your repo name.
   deploymentBranch: "source",
 
   onBrokenLinks: 'throw',
@@ -55,8 +55,8 @@ const config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          //editUrl:
+          //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -75,7 +75,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Glozic Learning',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -87,10 +87,10 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          //{to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: 'https://www.glozic.com',
+            label: 'Glozic',
             position: 'right',
           },
         ],
@@ -108,37 +108,37 @@ const config = {
             ],
           },
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
+            //title: 'Community',
+            //items: [
+              //{
+              //  label: 'Stack Overflow',
+              //  href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              //},
+              //{
+              //  label: 'Discord',
+              //  href: 'https://discordapp.com/invite/docusaurus',
+              //},
+              //{
+              //  label: 'Twitter',
+              //  href: 'https://twitter.com/docusaurus',
+              //},
+            //],
           },
           {
             title: 'More',
             items: [
               {
                 label: 'Blog',
-                to: '/blog',
+                to: 'https://www.glozic.com/blogs',
               },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
+              //{
+              //  label: 'GitHub',
+              //  href: 'https://github.com/facebook/docusaurus',
+              //},
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Glozic Pte. Ltd. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
