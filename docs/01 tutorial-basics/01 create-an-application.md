@@ -2,14 +2,17 @@
 sidebar_position: 1
 ---
 
-# Create an Application
+# Applications
+
+Application refers to a **Building Block** for business solutions.
+
+In Glozic, an Application serves as a container for various design components, organized to fulfill specific business needs. Think of it as a modular unit that can be tailored to address different requirements within a tenant environment. This modular approach allows for flexibility and scalability, enabling organizations to create multiple applications to cater to diverse business processes or target audiences.
+
+## Create your first application
 
 Select `Settings` from the Application Dropdown menu, you will be brought to the Applications page similar to the below screen capture:
 
 ![](/img/Tenant-Settings.png)
-
-
-## Create your first application
 
 Click the "New Application" button to create a new application.
 

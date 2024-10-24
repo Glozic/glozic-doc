@@ -30,3 +30,7 @@ Glozic Studio can be accessed at `https://<tenant>.glozic.dev`
 Tenant Portal or Studio are web applications with simple navigation via **Application Dropdown** on the Top Navigation Bar (i.e. **Top Bar**) and **Side Navigation Bar** (i.e. **SideNav**/**SideBar**) as shown in the diagram below:
 
 ![](/img/Studio-Navigation.png)
+
+:::tip Note
+The entire tutorial will be done on the **Studio**
+:::

@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Create a Collections
+# Collections
 
 A **collection** in a NoSQL database is analogous to a **table** in a relational database. However, unlike tables that have a fixed schema with predefined columns, collections can store documents with varying structures and fields, offering greater flexibility and scalability. This schema-less or dynamically typed approach makes NoSQL databases well-suited for handling large-scale data sets, structured and unstructured data.
 
