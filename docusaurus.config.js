@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Docs',
+  tagline: 'Rapid Cloud Application Builder',
   favicon: 'img/glozic-favicon.gif',
 
   // Set the production url of your site here
@@ -98,18 +98,18 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
+          //{
+          //  title: 'Docs',
+          //  items: [
+          //    {
+          //      label: 'Tutorial',
+          //      to: '/docs/intro',
+          //    },
+          //  ],
+          //},
+          //{
+          //  title: 'Community',
+          //  items: [
               //{
               //  label: 'Stack Overflow',
               //  href: 'https://stackoverflow.com/questions/tagged/docusaurus',
@@ -118,27 +118,27 @@ const config = {
               //  label: 'Discord',
               //  href: 'https://discordapp.com/invite/docusaurus',
               //},
-              {
-                label: 'Twitter',
-                href: 'https://x.com/glozic-docs',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: 'https://www.glozic.com/blogs',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/Glozic',
-              },
-            ],
-          },
+           //   {
+           //     label: 'Twitter',
+           //     href: 'https://x.com/glozic-docs',
+           //   },
+           // ],
+          //},
+          //{
+          //  title: 'More',
+          //  items: [
+          //    {
+          //      label: 'Blog',
+          //      to: 'https://www.glozic.com/blogs',
+          //    },
+          //    {
+          //      label: 'GitHub',
+          //      href: 'https://github.com/Glozic',
+          //    },
+          //  ],
+          //},
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Glozic Pte. Ltd. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Glozic Pte. Ltd.`,
       },
       prism: {
         theme: prismThemes.github,
