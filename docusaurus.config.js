@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/glozic-favicon.gif',
 
   // Set the production url of your site here
   url: 'https://glozic-docs.netlify.app',
@@ -73,12 +73,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/glozic-logo-small.png', //'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Glozic Learning',
+        title: 'Learning',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/glozic-logo-small.png', //'img/logo.svg',
         },
         //items: [
         //  {
