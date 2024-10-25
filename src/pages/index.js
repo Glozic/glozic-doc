@@ -7,6 +7,9 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
+import React from "react";
+import { Redirect } from "@docusaurus/router";
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -29,6 +32,8 @@ function HomepageHeader() {
 }
 
 export default function Home() {
+  return <Redirect to="/docs/intro" />
+  /*
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
@@ -40,4 +45,5 @@ export default function Home() {
       </main>
     </Layout>
   );
+  */
 }

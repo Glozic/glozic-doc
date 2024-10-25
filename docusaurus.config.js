@@ -21,8 +21,8 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Glozic', // Usually your GitHub org/user name.
-  projectName: 'kokkoon.github.io', // Usually your repo name.
-  deploymentBranch: "source",
+  projectName: 'glozic-docs', // Usually your repo name.
+  //deploymentBranch: "source",
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -80,20 +80,20 @@ const config = {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
+        //items: [
+        //  {
+        //    type: 'docSidebar',
+        //    sidebarId: 'tutorialSidebar',
+        //    position: 'left',
+        //    label: 'Tutorial',
+        //  },
           //{to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://www.glozic.com',
-            label: 'Glozic',
-            position: 'right',
-          },
-        ],
+        //  {
+        //    href: 'https://www.glozic.com',
+        //    label: 'Glozic',
+        //    position: 'right',
+        //  },
+        //],
       },
       footer: {
         style: 'dark',
@@ -108,8 +108,8 @@ const config = {
             ],
           },
           {
-            //title: 'Community',
-            //items: [
+            title: 'Community',
+            items: [
               //{
               //  label: 'Stack Overflow',
               //  href: 'https://stackoverflow.com/questions/tagged/docusaurus',
@@ -118,11 +118,11 @@ const config = {
               //  label: 'Discord',
               //  href: 'https://discordapp.com/invite/docusaurus',
               //},
-              //{
-              //  label: 'Twitter',
-              //  href: 'https://twitter.com/docusaurus',
-              //},
-            //],
+              {
+                label: 'Twitter',
+                href: 'https://x.com/glozic-docs',
+              },
+            ],
           },
           {
             title: 'More',
@@ -131,10 +131,10 @@ const config = {
                 label: 'Blog',
                 to: 'https://www.glozic.com/blogs',
               },
-              //{
-              //  label: 'GitHub',
-              //  href: 'https://github.com/facebook/docusaurus',
-              //},
+              {
+                label: 'GitHub',
+                href: 'https://github.com/Glozic',
+              },
             ],
           },
         ],
