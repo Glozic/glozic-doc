@@ -2,24 +2,40 @@
 sidebar_position: 1
 ---
 
-# Glozic Tutorial
+# Getting Started
 
-Short tutorials get you started on Glozic application development.
+Get started on Glozic application development.
+## Access This Documentation
+This online documentation is accessible from the following URL.  
+<p align="center">
+<img src="/img/Glozic-Learning-URL.png" alt="microsite" width="300"/>
+<br/>
+<strong class="green-text"> https://docs.glozic.com </strong>
+</p>
 
-## Getting Started
+## The environment
 
-Make sure a tenant was provisioned and you were granted access to the tenant portal and studio.
+To begin our journey, let's familiarize ourselves with the fundamental components of the Glozic platform: **Glozic Studio** and the **Tenant Portal**.
 
-|<img src="/img/Tenant-Portal.png" />|<img src="/img/Tenant-Studio.png" />|
+Each **Tenant** on the Glozic platform is granted access to both environments. This architectural overview provides a visual representation of their relationship:
+
+<p align="center">
+<img src="/img/Architecture-Glozic-white.png" alt="Glozic Architecture" width="100%"/>
+<br/>
+</p>
+
+Make sure a Tenant Portal was provisioned and you were granted access to the Studio and Tenant Portal.
+
+|<img src="/img/Tenant-Studio.png" />|<img src="/img/Tenant-Portal.png" />|
 |:-:|:-:|
-|*Tenant Portal*|*Tenant Studio*|
+|*Glozic Studio*|*Tenant Portal*|
 
-**Tenant Studio** or also known as **Glozic Studio** can be regconised from the URL domain (i.e. `glozic.dev`) or the "**Studio**" next to the log as shown below:
+**Glozic Studio** or also known as **Tenant Studio** can be regconised from the URL domain (i.e. `glozic.dev`) or the logo indicated with "**Studio**" next to it as shown below:
 
 ![](/img/Studio-Indicator.png)
 
 
-## Access your tenant portal and tenant studio
+## Portals Access URLs
 
 Tenant Portal can be accessed at `https://<tenant>.glozic.com`
 

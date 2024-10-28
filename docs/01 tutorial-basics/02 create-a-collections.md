@@ -26,7 +26,7 @@ The following screen capture shows the **Collection Designer** and various desig
 
 ## Collection Form
 
-Select **Layout** group header from the Form Components panel, drag-and-drop a **Div** component to the *Form Canvas** component placeholder as shown in the diagram below:
+Select **Layout** group header from the Form Components panel, drag-and-drop a **Div** component to the **Form Canvas** component placeholder as shown in the diagram below:
 ![](/img/Collections-Form-1.png)
 
 Once you have dropped the **Div** component onto the Form Canvas, the component configuration dialog box will be opened for further configuration as shown in the below screen capture.
@@ -41,10 +41,14 @@ Move mouse cursor over or on-top of the **Div** component again, noticed the com
 Enter `w-75 mx-auto align-items-center` in the **Custom CSS Class** field as shown below, and click **Save** button to save configuration changes.
 ![](/img/Collections-Form-4.png)
 
+:::tip Note
+Bootstrap v4 is default front-end framework used in Glozic platform, CSS classes will be recognised by default. For more details on Bootstrap is available at [Bootstrap link](https://getbootstrap.com/docs/4.6/getting-started/introduction/).
+:::
+
 Move mouse on top of the **Div** component again, and verify now the component is size to width of 75% of the canvas width. Other CSS Classes could be applied the same way for all other form components.
 ![](/img/Collections-Form-5.png)
 
-Drag-adn-drop a "Columns" component from the **Layout** group, followed by a "Text Field" component from the **Form** group to the first column of the **Columns** component.
+Drag-adn-drop a "**Columns**" component from the **Layout** group, followed by a "**Text Field**" component from the **Form** group to the first column of the **Columns** component.
 ![](/img/Collections-Form-6.png)
 
 Once you have dropped the **Text Field** component onto the Form Canvas, the component configuration dialog box will be opened as showned in screen capture below, enter **"Name"** in the **Label** field, click the **API** tab to verify the **Property Name** field's value should auto set to **name** by default.

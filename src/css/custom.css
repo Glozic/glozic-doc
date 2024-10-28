@@ -57,3 +57,8 @@ html[data-theme='dark'] .header--github-link:before {
   height: 70%;
   margin-top: 3px;
 }
+
+.green-text {
+  font-size: 30px;
+  color: rgb(8, 172, 60);
+}

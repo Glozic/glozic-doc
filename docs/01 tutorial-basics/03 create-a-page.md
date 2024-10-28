@@ -32,5 +32,5 @@ Replace the `{{form.applicationName}}` with `{{form.applicationName.toLowerCase(
 ![](/img/Pages-Design-1.png)
 
 :::tip Note
-Noticed the support of lodash templating languague on Page design. Similarly, **Page** supports other features such as loading of data via the Variables, external Javascript libraries, CSS, etc.
+Noticed the support of [lodash templating](https://lodash.com/docs) languague on Page design. Similarly, **Page** supports other features such as loading of data via the Variables, external Javascript libraries, CSS, etc.
 :::

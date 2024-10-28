@@ -114,4 +114,29 @@ The Expense Form is now updated to something similar to the below screen capture
 Take note that I have also set the Total (i.e. Currency Component) field to `Disabled` (i.e. a property under the **Display** tab of the component). To avoid this component being edited by users.
 :::
 
+## Inspect and Change Form CSS
 
+Try out the form you have built so far by creating a (i.e. **Expense**) document and save the document. **Open/Edit** the document, you should be getting something similer to the below screen capture
+![](./img/Form-Inspect-1.png)
+
+We are going to inspect and make some changes to the defaulted styling of the **Edit Gird** component. Right click on the Expense document's first column header as shown in the below screen capture.
+![](./img/Form-Inspect-2.png)
+
+Select the **Inspect** from the pop-up menu to inspect the code. After you have found the html element for the **Edit Grid** component, try to change the `.list-group` CSS Class by adding a border as shown in the below screen capture.
+![](./img/Form-Inspect-3.png)
+
+This approach helps us inspect and modify the CSS to our expectation, copy the updated `.list-group` as shown in the below screen capture.
+![](./img/Form-Inspect-4.png)
+
+Back to Edit the **Expense** collection form, paste the copied CSS class and add it to the form as shown in the below screen capture.
+![](./img/Form-Inspect-5.png)
+
+The CSS Class to be modified as below
+```CSS
+.list-group {
+  border: double;
+}
+```
+
+Try to open any Expense document to examine the result again, the Edit Grid is now formatted with the border settings as expected, shown in the below example.
+![](./img/Form-Inspect-6.png)
