@@ -21,8 +21,79 @@ In this tutorial, we will explore how to create a separate collection for subdoc
 
 ## Create a Expense Items collection
 
+Create a new collection for **Expense Items** with below information
+
+| Field | Value |
+|--|--|
+| Title | Expense Items |
+| Name | expense-items |
+| Description | Expense Items |
+
+Creat the Expense Items form with the following form components
+
+- Edge Frame (Layout) [img](./img/3-model-expense-edgeframe.png)
+  - Typography ( Form `Expense Item`)
+  - 6-6 Columns (Layout - Columns)
+    - Expense ID (Form - Text Field `hidden` `disabled`)
+    - Category (Form - Select)
+    - Date (Form - Date/Time)
+    - Description (Form - Text Field)
+    - Amount (Form - Currency)
+  - 3-3-6 Columns (Layout - Columns)
+    - Close Button (Form - Custom Button)
+    - Submit Button (Form - Submit Button)
+
+The form should look similar to below screen capture
+![](./img/3-model-expense-form.png)
+
 ## Create Belongs-to relationship in Expense Items
 
+Select the **Connector** icon from the Form Toolset Icons, click **Add relation** to setup a new model relation. Refer to the below screen capture for proposed values:
+![](./img/3-model-relation-add.png)
+
+Update and Exit from the **Expense Items** collection design.
+
 ## Force saving Expense Items to Expense Items collection
+
+### Create Expense Items Endpoint
+Create an **Expense Items** endpoint for POSTing of Expense Items to the Expense Items collection. Refer to the table below for proposed values
+
+| Field | Value |
+|--|--|
+| Title | Expense Items |
+| Name | expense-items |
+| Endpoint URL | `https://<tenant>.glozic.dev/<app-name>/endpoint/expense-items` |
+| Method | POST |
+| Response Type | JSON |
+| Endpoint Scope | Protected |
+| Description | Create Expense Items |
+
+Add the following Variables to the endpoint
+| Variable | Type | Code |
+|--|--|--|
+| id | JS Expression | `return(_var.request.body.id)` |
+| expenseItems | JS Expression | `return(_var.request.body.expenseItems)` |
+
+Below screen capture shows an example of the Endpoint settings
+![](./img/3-endpoint-expense-items.png)
+
+Create the following flow
+![](./img/3-model-endpoint-flow.png)
+
+### Save Expense Items to the child collection
+Design the **Expense** collection, go to the **Event** tab to design the **Document added to collection** event by drag and drop a **Call Web Service** action onto the flow designer.
+![](./img/3-expense-event-design-1.png)
+
+Enter suggested values as shown in the below screen capture
+![](./img/3-expense-event-design-2.png)
+
+Since the **Expense-Items** endpoint is a protected endpoint, we will need to add the **Authorization** header with the following key-value pair as shown in the below screen capture
+![](./img/3-expense-event-design-3.png)
+
+:::tip Note
+See the following section on how to get an Access Token
+:::
+
+### Create Access Token for the restricted endpoint
 
 ## Display referenced document property in view

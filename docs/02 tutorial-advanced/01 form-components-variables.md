@@ -63,7 +63,7 @@ By effectively using variables, you can create more flexible and interactive app
 
 ## Add a variable to the Expense form
 
-Open Form Design of **Expense** collection that was created in the Basic Tutorial. Click the "**Connector**" icon from the Form tool icon set, click the "**Add**" button next to the Variables to create/defin new variable, as highlighted in the below screen capture.
+Open Form Design of **Expense** collection that was created in the Basic Tutorial. Click the "**Connector**" icon (i.e. 2nd icon from left) of the Form Toolset Icons <img src="/img/Form-Toolset-Icons.png" height="17"/>, click the "**Add**" button next to the Variables to create/defin new variable, as highlighted in the below screen capture.
 ![](./img/collection-settings-create-6.png)
 
 Configure the variable according suggestion as shown in the below screen capture, and click **Submit** to save the variable.
