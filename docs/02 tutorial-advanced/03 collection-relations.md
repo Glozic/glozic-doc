@@ -119,7 +119,7 @@ Create the following flow
 | Method | Update |
 | App | `<App Name>` |
 | Collection | expense-items |
-| Fetch Record | documentId | `{{item._id}}`|
+| Fetch Record | documentId, `{{item._id}}`|
  Submission Body
  ```JSON
 {
