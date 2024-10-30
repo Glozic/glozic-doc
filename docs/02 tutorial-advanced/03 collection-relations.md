@@ -80,6 +80,58 @@ Below screen capture shows an example of the Endpoint settings
 Create the following flow
 ![](./img/3-model-endpoint-flow.png)
 
+**Loop**
+| Field | Value |
+|--|--|
+| Source Type | Variable |
+| Variable List | expenseItems |
+| Save response to varialbe | item |
+
+**If Else**
+| Field | Value |
+|--|--|
+| Source Type | Variable |
+| When | `{{item._id}}` |
+| Operator | is not empty |
+| Save response to varialbe | exists |
+
+**Collection Operation** (False / Left-branch)
+| Field | Value |
+|--|--|
+| Method | Create |
+| Insert Type | Insert One |
+| App | `<App Name>` |
+| Collection | expense-items |
+ Submission Body
+ ```JSON
+{
+  "category": "{{item.category}}",
+  "dateTime": "{{dateTime}}",
+  "description": "{{item.description}}",
+  "amount": "{{item.amount}}",
+  "expenseId": "{{id}}"
+}
+```
+
+**Collection Operation** (True / Right-branch)
+| Field | Value |
+|--|--|
+| Method | Update |
+| App | `<App Name>` |
+| Collection | expense-items |
+| Fetch Record | documentId | `{{item._id}}`|
+ Submission Body
+ ```JSON
+{
+  "category": "{{item.category}}",
+  "dateTime": "{{dateTime}}",
+  "description": "{{item.description}}",
+  "amount": "{{item.amount}}",
+  "expenseId": "{{id}}"
+}
+```
+
+
 ### Save Expense Items to the child collection
 Design the **Expense** collection, go to the **Event** tab to design the **Document added to collection** event by drag and drop a **Call Web Service** action onto the flow designer.
 ![](./img/3-expense-event-design-1.png)
