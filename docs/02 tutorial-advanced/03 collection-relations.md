@@ -148,4 +148,9 @@ See the following section on how to get an Access Token
 
 ### Create Access Token for the restricted endpoint
 
+To generate a personal token for API, go to the `settings` menu from the Application Dropdown of Studio. Select **Personal Token** from the SideNav, you should be brought to Personal Access Token console as shown in the below screen capture.
+![](./img/3-personal-token.png)
+
+Click **Add Token** to create a new token, give the personal access token a name and select a validaty duration for the token. You may copy the created token to be used call calling restricted Endpoints created on the Glozic Platform.
+
 ## Display referenced document property in view
