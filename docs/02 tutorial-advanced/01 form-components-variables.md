@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Form Components and Variables
+# Edit Grid and Variables
 
 **Expanding Your Collection Design Skills.**
 
