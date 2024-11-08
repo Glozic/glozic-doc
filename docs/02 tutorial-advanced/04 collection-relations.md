@@ -154,3 +154,6 @@ To generate a personal token for API, go to the `settings` menu from the Applica
 Click **Add Token** to create a new token, give the personal access token a name and select a validaty duration for the token. You may copy the created token to be used call calling restricted Endpoints created on the Glozic Platform.
 
 ## Display referenced document property in view
+
+With the Model Relation, the view will auto reference the related document. We're going to modify the Default view of Expense Items to show it's parent document's **Expense Number**. This is shown in the below screen capture.
+![](./img/3-expense-items-view-1.png)
