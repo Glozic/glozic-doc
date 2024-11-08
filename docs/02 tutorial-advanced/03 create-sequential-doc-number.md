@@ -57,7 +57,7 @@ Drag and drop a **Collection Operation** action to the flow, use the below sugge
 
 ```JSON
 {
-    "expNumber": "{{expNumber}}"
+    "expNumber": "{{expenseNumber}}"
 }
 ```
 
@@ -71,12 +71,12 @@ To achieve this, we'll configure an event on the Expense collection. When a new 
 |--|--|
 | Save as variable | ExpNumber |
 | Method | POST |
-| Request URL | \{\{baseurl\}\}/expense/endpoint/generate-expense-number |
+| Request URL | `{{baseurl}}/<your-app-name>/endpoint/generate-expense-number` |
 | Response Type | Response Body |
 
 Body
 ```JSON
 {
-    "id" : "{{document._id}}"
+    "id" : "{{document._id}}",
     "sid" : "{{document.sid}}"
 }

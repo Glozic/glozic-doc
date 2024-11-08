@@ -6,7 +6,7 @@ sidebar_position: 2
 
 In the previous tutorial, we have created the **settings** collection for saving list of lookup values. The **settings** form that we have built was using an **Edit Grid** component, it saves the list of values as subdocuments of the **Settings** document.
 
-We are going to replace the Edit Grid component with a **Date Grid** component in this tutorial.
+We are going to replace the Edit Grid component with a **Data Grid** component in this tutorial.
 
 ## Add a Data Grid
 
