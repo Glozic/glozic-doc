@@ -26,6 +26,9 @@ Add the following variables to the Expense collection design.
 | Filters | `expenseId` eq `{{document._id}}` |
 | Save as variable | expItems |
 
+Below screen capture shows how the `expItems` is being configured.
+![](./img/5-expItems-variable.png)
+
 **Replace the `expenseItems` Edit Grid values**
 
 Open the Code editor of the **Expense** collection form, enter the following code to replace the `expenseItems` component
@@ -39,3 +42,6 @@ $(document).ready(function(){
 ```
 
 **Call the Endpoint when Expense being updated**
+
+Next, you will need to call the same endpoint in the previous tutorial to update the **Expense Items** collection with the Expense Items. Below screen capture shows how the "Document updated to collection" Event is being configured.
+![](./img/5-document-update-event.png)
