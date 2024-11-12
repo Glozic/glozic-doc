@@ -22,7 +22,7 @@ Add the following variables to the Expense collection design.
 |--|--|
 | Type | Collection |
 | Collection | `expense-items - collection` |
-| Select Access Fields | `category`, `amount`, `description`, expenseId`, `documentId`, `_id` |
+| Select Access Fields | `category`, `amount`, `description`, `expenseId`, `documentId`, `_id` |
 | Filters | `expenseId` eq `{{document._id}}` |
 | Save as variable | expItems |
 
