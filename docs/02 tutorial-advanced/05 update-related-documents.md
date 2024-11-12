@@ -41,6 +41,9 @@ $(document).ready(function(){
 })
 ```
 
+Below screen capture for reference
+![](./img/5-replace-expenseitems-code.png)
+
 **Call the Endpoint when Expense being updated**
 
 Next, you will need to call the same endpoint in the previous tutorial to update the **Expense Items** collection with the Expense Items. Below screen capture shows how the "Document updated to collection" Event is being configured.
