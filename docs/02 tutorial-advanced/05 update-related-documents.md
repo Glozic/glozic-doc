@@ -16,14 +16,14 @@ Add the following variables to the Expense collection design.
 | Field | Value |
 |--|--|
 | Type | Document |
-| Save as variable | document |
+| Save as variable | expDoc |
 
 | Field | Value |
 |--|--|
 | Type | Collection |
 | Collection | `expense-items - collection` |
 | Select Access Fields | `category`, `amount`, `description`, `expenseId`, `documentId`, `_id` |
-| Filters | `expenseId` eq `{{document._id}}` |
+| Filters | `expenseId` eq `{{expDoc._id}}` |
 | Save as variable | expItems |
 
 Below screen capture shows how the `expItems` is being configured.
@@ -34,10 +34,14 @@ Below screen capture shows how the `expItems` is being configured.
 Open the Code editor of the **Expense** collection form, enter the following code to replace the `expenseItems` component
 ```Javascript
 $(document).ready(function(){
-  const expenseItems = form.expItems;
-  const value = formio.getValue();
-  value["data"]["expenseItems"] = expenseItems;
-  formio.setValue(value)
+    const expenseItems = form.expItems.slice();
+    const value = formio.getValue();
+    value["data"]["expenseItems"] = [].slice();
+    console.log("values", ["data"]["expenseItems"] );
+    expenseItems.forEach(x => {
+        value["data"]["expenseItems"].push(x);
+    });
+    formio.setValue(value);
 })
 ```
 
