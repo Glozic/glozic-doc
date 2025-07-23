@@ -37,5 +37,3 @@ Click **Save** to save changes made on the **Render Web Content** action, click 
 ## Test the Endpoint
 Copy the URL of the endpoint, and try it out from either using Postman or Web browser, you should be getting the result similar to the below screen capture.
 ![](/img/Endpoint-Create-6.png)
-
-
